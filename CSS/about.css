@@ -1,0 +1,181 @@
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+ header h1 {
+    color: #fff;
+      font-size: 27px;
+      margin: 0;
+}
+nav {
+      background-color: #000;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+nav ul {
+    list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+}
+   nav li{
+    margin-left: 60px;
+   }
+nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+    nav a:hover{
+      color: #143D59;
+      transition: 0.3s;
+    }
+
+/* Hero Section */
+#hero {
+    background-color: #252525;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h4 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero-content p {
+   font-size: 18px;
+    color: #bdbaba;
+    
+}
+
+/* Team Section */
+#team {
+    background-color: #111;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+.team-member {
+    margin-bottom: 40px;
+}
+
+.team-member h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.team-member p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #bdbaba;
+}
+
+/* Goals Section */
+#goals {
+    background-color: #252525;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#goals h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+#goals p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #bdbaba;
+}
+
+/* Footer */
+footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+       .social-links img{
+       width: 40px;
+       border-radius: 50%;
+
+       }
+        .social-links img:hover {
+            width:45px; 
+            transition: 0.4s;
+        }
+        .comments {
+            margin-top: 30px;
+        }
+        .comments h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+            padding-left: 5%;
+
+        }
+        .comments form {
+            margin-top: 10px;
+            padding-left: 5%;
+        }
+        .comments textarea {
+            width: 50%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            resize: none;
+            background-color: #363535;
+            color: #bdbaba;
+        }
+        .comments input[type="submit"] {
+            background-color: #143D59;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    

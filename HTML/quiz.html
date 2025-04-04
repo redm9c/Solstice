@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="jpg"
+    href="interstellar.jpg">
+
+    <title>Solstice | Quiz</title>
+    <link rel="stylesheet" href="../CSS/quiz.css">
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Solstice</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="arrticles.html">Articles</a></li>
+            <li><a href="quiz.html" target="_blank">Quiz</a></li>
+            <li class="dropdown">
+                <a href="#">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="galleryimages.html"> Images</a>
+                    <a href="galleryvideos.html"> Videos</a>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="quiz">
+            <h1>Quiz</h1>
+            <p>Test your knowledge with our interactive quiz section.</p> 
+        </div>
+        <div id="quiz-container">
+          <script>
+          const questions = [
+          {
+            question: 'Question 1: What is the average distance between the Earth and the Sun?',
+            options: ['93 million miles', '238,900 miles', '384,400 miles', '149.6 million kilometers'],
+            correctAnswer: 0
+          },
+  {
+    question: 'Question 2: Which planet is known as the "Red Planet"?',
+    options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
+    correctAnswer: 1
+    
+  },
+  {
+    question: 'Question 3: What is the largest planet in our solar system?',
+    options: ['Mercury', 'Venus', 'Jupiter', 'Saturn'],
+    correctAnswer: 2
+  },
+  {
+    question: 'Question 4: Which of the following is not a type of galaxy?',
+    options: ['Spiral galaxy', 'Elliptical galaxy', 'Irregular galaxy', 'Nebula'],
+    correctAnswer: 3
+  },
+  {
+    question: 'Question 5: What is the name of the brightest star in the night sky?',
+    options: ['Vega', 'Proxima Centauri', 'Sirius', 'Polaris'],
+    correctAnswer: 2
+  },
+  {
+    question: 'Question 6: What causes a solar eclipse?',
+    options: ['Earth passing between the Sun and the Moon', 'Moon passing between the Sun and the Earth', 'Sun passing between the Earth and the Moon', 'Mars passing between the Sun and the Earth'],
+    correctAnswer: 1
+  },
+  {
+    question: 'Question 7: What is the largest moon in our solar system?',
+    options: ['Titan', 'Ganymede', 'Europa', 'Callisto'],
+    correctAnswer: 1
+  },
+  {
+    question: 'Question 8: What is the process by which a star exhausts its nuclear fuel and collapses under its own gravity?',
+    options: ['Supernova', 'Black hole', 'Nebula', 'White dwarf'],
+    correctAnswer: 0
+  },
+  {
+    question: 'Question 9: What is the name of the first satellite launched into space?',
+    options: ['Apollo 11', 'Hubble Space Telescope', 'Sputnik 1', 'Voyager 1'],
+    correctAnswer: 2
+  },
+  {
+    question: 'Question 10: What is the phenomenon that causes the bending of light around a massive object?',
+    options: ['Redshift', 'Black hole', 'Nebula', 'Gravitational lensing'],
+    correctAnswer: 3
+  }
+        ];
+        
+        let questionNumber = 0;
+        let score = 0;
+        
+        function showQuestion() {
+          const currentQuestion = questions[questionNumber];
+          const questionText = currentQuestion.question;
+          const options = currentQuestion.options.map((option, index) => `
+            <li>
+              <input type="radio" name="answer" value="${index}">
+              ${option}
+            </li>
+          `).join('');
+        
+          const quizContainer = document.getElementById('quiz-container');
+          quizContainer.innerHTML = `
+            <div class="question">
+              <h3>${questionText}</h3>
+              <ul class="options">
+                ${options}
+              </ul>
+              <div class="submit-btn">
+                <button onclick="checkAnswer()">Submit</button>
+              </div>
+            </div>
+            <div class="q-number">
+              Question ${questionNumber + 1} of ${questions.length}
+            </div>
+          `;
+        }
+        
+        function checkAnswer() {
+          const selectedOption = document.querySelector('input[name="answer"]:checked');
+          if (selectedOption) {
+            const selectedValue = parseInt(selectedOption.value);
+            const currentQuestion = questions[questionNumber];
+            const correctAnswer = currentQuestion.correctAnswer;
+        
+            if (selectedValue === correctAnswer) {
+              score++;
+              alert('Correct!');
+            } 
+            else 
+            {
+              alert('Wrong!');
+            }
+        
+            questionNumber++;
+            if (questionNumber < questions.length) {
+              showQuestion();
+            } else {
+              showScore();
+            }
+          } 
+          else 
+          {
+            alert('Please select an option.');
+          }
+        }
+        
+        function showScore() {
+          const quizContainer = document.getElementById('quiz-container');
+          quizContainer.innerHTML = `
+            <div class="score">
+              <h3>Quiz Finished!</h3>
+              <p>Your score: ${score} out of ${questions.length}</p>
+            </div>
+          `;
+        }
+        
+        // Show the first question initially
+        showQuestion();
+      </script>
+                </div>
+    </div>
+</body>
+</html>

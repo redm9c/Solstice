@@ -1,0 +1,161 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+    box-sizing: border-box;
+    padding: 40px;
+  }
+
+  .navbar {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar li.active a {
+color: #143D59;
+
+}
+.navbar h1 {
+    color: #fff;
+    font-size: 27px;
+    margin: 0;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar li {
+    margin-left: 60px;
+
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  .navbar a:hover{
+    color: #143D59;
+    transition: 0.3s;
+  }
+
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .article-card {
+    background-color: #252525;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 100%;
+  }
+
+  .article-card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .article-card p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    width: 304%;
+  }
+  .footer p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    }
+  .page-title{
+    font-size: larger;
+    
+}
+  
+  .sun1{
+      background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/Sun.jpg);
+   }
+  .moon2{
+      background-image: linear-gradient(rgba(10,10,10,0.7),rgba(10,10,10,0.7)),url(../Images/moon.jpg);
+   }
+  .solar3{
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/solar.png);
+  }
+  .nebula4{
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/n2.jpg);
+  }
+  .stars5{
+      background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/stars.jpg);
+  }
+  .black{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/blackhole.jpg);
+  }
+  .wormholes{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/worm.jpg);
+  }
+  .exo{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/exo.webp);
+  }
+  .dark{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/dark.jpg);
+  }
+  .moonss{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/planetmoons.jpg);
+  }
+  .meteoroids{
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/meteor.avif);
+  }
+  .comet{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/comet.jpg);
+  }
+  .nova{
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/nova.avif);
+  }
+  .interstellar{
+      background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/interstellar.jpg);
+  }
+  .navbar .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #000;
+          min-width: 160px;
+          
+      }
+
+      .navbar .dropdown-content a {
+          color: #fff;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .navbar .dropdown:hover .dropdown-content {
+          display: block;
+      }

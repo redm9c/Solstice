@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Images/back13.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../Images/back13.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius:20px ;
+    width: 30%;
+    position: absolute;
+    top: 27%;
+    right: 8%;
+
+    
+  }
+  
+  nav ul li {
+    list-style-type: none;
+margin-top: 60px;
+border-bottom: grey 1px solid;
+margin-left: 5%;
+width: 88%;
+
+
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(180, 177, 177);
+    font-size: 18px;
+
+  }
+  nav a:hover{
+    color: #fff;
+}
+ .row {
+    display: flex;
+    height: 88%;
+    align-items: center; 
+  }
+  
+  .col{
+    flex: 1;
+    color: aliceblue;
+    
+  }
+  
+  .col h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .col p {
+font-size: 18px;
+
+
+}
+
+ .explore button{
+    width: 180px;
+    color: aliceblue;
+    font-size: 17px;
+    padding: 12px ;
+    background : #143D59;
+    border: 0;  
+    border-radius: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+  .explore button a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.explore button a:hover{
+    color: aliceblue;
+   }
+   .explore button:hover{
+    background-color: #0c2f47;
+   
+
+   }
+   .hero{
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid grey;
+   }
+   .hero h4{
+    font-size: 30px;
+    margin-right: 80%;
+   }
+   .hero button{
+    padding: 10px;
+    float:right;
+    justify-content: flex-end;
+    color: #fff;
+    border-radius: 30px;
+    width: 8%;
+    background-color: #222;
+    border: 1px solid;
+    cursor: pointer;
+
+   }
+   button a{
+    color: #fff;
+    text-decoration: none;
+   }
+   .hero button:hover{
+    background-color: transparent;
+    transition: 0.3s;
+   }
+  

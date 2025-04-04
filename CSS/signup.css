@@ -1,0 +1,101 @@
+
+        body {
+            background-color: #111;
+            font-family: Trebuchet MS;
+        }
+
+        .welcome-header {
+            color: aliceblue;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .signup-form {
+            max-width: 400px;
+            margin: 0 auto;
+            color: aliceblue;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px 5px black;
+        }
+
+        .signup-form h4 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .signup-form .form-group input[type="text"],
+        .signup-form .form-group input[type="email"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #222121;
+            background-color: #2b2a2a;
+            color: #e2dede;
+        }
+
+        .signup-form .form-group select {
+            width: 95%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #222121;
+            background-color: #222121;
+            color: #e2dede;
+        }
+
+        .signup-form .form-group button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #143D59;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup-form .form-group button:hover {
+            background-color: #102F40;
+        }
+        .signup-form p{
+            font-size: 15px;
+            color: #706f6f;
+        }
+
+        .comments {
+            margin-top: 30px;
+        }
+        .comments h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+            padding-left: 5%;
+
+        }
+        .comments form {
+            margin-top: 10px;
+            padding-left: 5%;
+        }
+        .comments textarea {
+            width: 75%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            resize: none;
+            background-color: #363535;
+            color: #bdbaba;
+        }
